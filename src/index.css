@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #bac05b;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: black;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.calculator {
+  position: relative;
+  display: grid;
+  border: 15px solid black;
+  border-radius: 20px;
+}
+
+.calculator .value {
+  grid-column: span 4;
+  height: 80px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.calculator span {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  background: #292929;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: pointer;
+}
+.calculator span:hover {
+  display: grid;
+  width: 60px;
+  height: 60px;
+  background: #585656;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.calculator span:active {
+  background: rgb(255, 163, 26);
+  color: #fff;
+  cursor: pointer;
+}
+
+.calculator span.clear {
+  grid-column: span 2;
+  width: 120px;
+  background: rgb(255, 163, 26);
+  cursor: pointer;
+  /* color: #fff; */
+}
+.calculator span.clear:hover {
+  grid-column: span 2;
+  width: 120px;
+  background: rgb(250, 151, 3);
+  color: black;
+  cursor: pointer;
+  /* color: #fff; */
+}
+
+.calculator span.plus {
+  grid-row: span 2;
+  height: 120px;
+  cursor: pointer;
+}
+.calculator span.plus:hover {
+  grid-row: span 2;
+  height: 120px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.calculator span.equal {
+  background: rgb(255, 163, 26);
+  cursor: pointer;
+  /* background: #03b1ff; */
+}
+.calculator span.equal:hover {
+  background: rgb(255, 154, 3);
+  color: #0f0f0f;
+  font-size: 25px;
+  cursor: pointer;
+  /* background: #03b1ff; */
+}
